@@ -318,6 +318,58 @@ img {
         margin-top: 3rem;
         width: 100%;
     }
+
+    dfn {
+        border-bottom: dashed 1px var(--job_font);
+        padding: 0 0.2rem;
+        font-style: normal;
+        position: relative;
+    }
+
+    dfn::after {
+        content: attr(info);
+        display: inline;
+        position: absolute;
+        top: 22px;
+        left: 0;
+        opacity: 0;
+        width: 11rem;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1.5em;
+        padding: 0.5rem 0.8rem;
+        background: #064b4d;
+        pointer-events: none;
+        transition: opacity 200ms, top 200ms;
+    }
+
+    dfn::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        border: solid transparent 5px;
+        border-bottom-color: #064b4d;
+        transition: opacity 200ms, top 200ms;
+    }
+
+    dfn:hover::after,
+    dfn:hover::before {
+        opacity: 1;
+    }
+
+    dfn:hover::after {
+        top: 30px;
+    }
+
+    dfn:hover::before {
+        top: 20px;
+    }
 }
 
 .header_circle {
