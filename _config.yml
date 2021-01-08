@@ -21,7 +21,7 @@ user:
   name: leekyounghee
   pic: /assets/img/cat.jpg
   picAlt: "me?"
-  job: junior developer wanting to be extraordinary
+  job: ""
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
