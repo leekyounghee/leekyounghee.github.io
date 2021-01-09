@@ -389,7 +389,7 @@ img {
     }
 
     @include mobile-only {
-        bottom: 0;
+        bottom: 0; 
         left: 0;
         margin-left: auto;
         margin-right: auto;
@@ -416,10 +416,10 @@ img {
         display: none;
 
         &+div {
-            background: url('../img/m.png') no-repeat center center;
+            background: url('../img/sun.png') no-repeat center center;
             width: 30px;
             height: 30px;
-            border-radius: 50%;
+            border-radius: 0%;
             position: relative;
             transition: box-shadow .5s ease 0s, transform .5s ease .1s;
 
@@ -436,12 +436,13 @@ img {
 
             &:after {
                 
-                background: url('../img/s.png') no-repeat center;
-                border-radius: 50%;
+                background: url('../img/moon.png') no-repeat center;
+                border-radius: 0%;
                 content: '';
                 width: 30px;
                 height: 30px;
                 position: absolute;
+                
                 transform: scale(0);
                 transition: all .5s ease;
             }
