@@ -1,17 +1,18 @@
 <header class="header">
 
   <div class="header_content">
-    <label class="theme_changer">
+    
+    <!--<label class="theme_changer">
       <input theme_toggle type="checkbox">
       <div class="button"></div>
-    </label>
+    </label>-->
     <a class="header_circle" href="{{ '/' | relative_url }}">
       <img src="{{ site.user.pic | relative_url }}" alt="{{ site.user.picAlt }}">
     </a>
     <span class="header_name"><dfn info="junior developer wanting to be extraordinary">{{ site.user.name }}</dfn></span>
     <span class="header_job">{{ site.user.job }}</span>
     <span class="header_mes">{{ site.user.message }}</span>
-
+    
     <nav class="nav">
       {% if site.user.aboutme %}
       <ul class="nav_list">
@@ -30,7 +31,15 @@
       </ul>
       {% endfor %}
     </nav>
+    <div class="sns">
+      <span>
+        <a href="https://github.com/leekyounghee" target="_blank"><span class="sns-github"></span></a>
+        <a href="https://github.com/leekyounghee" target="_blank"><span class="sns-insta"></span></a>
+        <a href="https://github.com/leekyounghee" target="_blank"><span class="sns-linkedin"></span></a>
+      </span>
+    </div>
   </div>
+  
 
 </header>
 

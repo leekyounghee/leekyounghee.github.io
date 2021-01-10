@@ -24,9 +24,11 @@
 <!-- main page -->
 {% else %}
 <div class="archive">
-  <img src="/assets/img/1.PNG" class="main_img">
+
+  <span class="main_img"><img src="/assets/img/santiago.JPG" alt="변경필요"></span>
   {% for post in site.posts %}
   {% unless post.next %}
+  <p class="work_title">Work</p>
   <p class="archive_year">{{ post.date | date: '%Y' }}</p>
   {% else %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
